@@ -9,10 +9,11 @@ public class Main {
 
     public static String reverse() {
         StackReverser reverser = new StackReverser(getString());
-        return reverser.reverse();
+        return "reverse string: " + reverser.reverse();
     }
 
     public static String getString() {
+        System.out.print("your string: ");
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         String str = null;
