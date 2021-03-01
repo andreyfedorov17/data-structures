@@ -1,6 +1,6 @@
 public class MyPriorityQueue {
-    private int maxSize;
-    private long[] queArray;
+    private final int maxSize;
+    private final long[] queArray;
     private int nItems;
 
     public MyPriorityQueue(int maxSize) {

@@ -4,16 +4,11 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(reverse());
-    }
-
-    public static String reverse() {
-        StackReverser reverser = new StackReverser(getString());
-        return "reverse string: " + reverser.reverse();
+        // System.out.println(reverse());
+        // System.out.println(inToPost());
     }
 
     public static String getString() {
-        System.out.print("your string: ");
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         String str = null;
@@ -23,5 +18,17 @@ public class Main {
             e.printStackTrace();
         }
         return str;
+    }
+
+    public static String reverse() {
+        System.out.print("your string: ");
+        StackReverser reverser = new StackReverser(getString());
+        return "reverse string: " + reverser.reverse();
+    }
+
+    public static String inToPost() {
+        System.out.println("enter infix: ");
+        InToPost trans = new InToPost(getString());
+        return ("postfix is " + trans.doTrans() + '\n');
     }
 }
