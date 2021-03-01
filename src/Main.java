@@ -4,9 +4,11 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) {
-        // System.out.println(reverse());
-        // System.out.println(inToPost());
-        // System.out.println(parse());
+        /*
+        System.out.println(reverse());
+        System.out.println(inToPost());
+        System.out.println(parse());
+         */
     }
 
     public static String getString() {
