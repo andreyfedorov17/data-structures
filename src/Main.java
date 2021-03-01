@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         // System.out.println(reverse());
         // System.out.println(inToPost());
+        // System.out.println(parse());
     }
 
     public static String getString() {
@@ -30,5 +31,11 @@ public class Main {
         System.out.println("enter infix: ");
         InToPost trans = new InToPost(getString());
         return ("postfix is " + trans.doTrans() + '\n');
+    }
+
+    public static String parse() {
+        System.out.print("enter postfix: ");
+        ParsePost parser = new ParsePost(getString());
+        return ("evaluates to " + parser.doParse());
     }
 }
