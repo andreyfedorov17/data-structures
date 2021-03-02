@@ -8,6 +8,10 @@ public class Link {
         this.dData = dData;
     }
 
+    public Link(long dData) {
+        this.dData = dData;
+    }
+
     public void displayLink() {
         System.out.print("{" + iData + "; " + dData + "}" );
     }
