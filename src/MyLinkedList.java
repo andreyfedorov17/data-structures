@@ -9,8 +9,8 @@ public class MyLinkedList {
         return (first == null);
     }
 
-    public void insertFirst(int iData, double dData) {
-        Link newLink = new Link(iData, dData);
+    public void insertFirst(long dData) {
+        Link newLink = new Link(dData);
         newLink.next = first;
         first = newLink;
     }
@@ -31,9 +31,9 @@ public class MyLinkedList {
         System.out.println();
     }
 
-    public Link find(int key) {
+    public Link find(long key) {
         Link current = first;
-        while (current.iData != key) {
+        while (current.dData != key) {
             if (current.next == null) {
                 return null;
             } else {
@@ -43,11 +43,11 @@ public class MyLinkedList {
         return current;
     }
 
-    public Link delete(int key) {
+    public Link delete(long key) {
         Link current = first;
         Link previous = first;
 
-        while (current.iData != key) {
+        while (current.dData != key) {
             if (current.next == null) {
                 return null;
             } else {

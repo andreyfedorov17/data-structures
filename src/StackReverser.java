@@ -1,5 +1,5 @@
 public class StackReverser {
-    private final String str;
+    private String str;
 
     public StackReverser(String str) {
         this.str = str;

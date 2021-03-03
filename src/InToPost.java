@@ -1,5 +1,5 @@
 public class InToPost {
-    private final MyStack stack;
+    private MyStack stack;
     private final String input;
     private String output = "";
 
