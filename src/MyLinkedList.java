@@ -64,4 +64,16 @@ public class MyLinkedList {
 
         return current;
     }
+
+    public Link getFirst() {
+        return first;
+    }
+
+    public void setFirst(Link first) {
+        this.first = first;
+    }
+
+    public MyListIterator getIterator() {
+        return new MyListIterator(this);
+    }
 }
