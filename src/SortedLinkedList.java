@@ -5,6 +5,14 @@ public class SortedLinkedList {
         first = null;
     }
 
+    public SortedLinkedList(Link[] links) {
+        first = null;
+
+        for (Link link : links) {
+            insert(link);
+        }
+    }
+
     public boolean isEmpty() {
         return (first == null);
     }
@@ -26,6 +34,24 @@ public class SortedLinkedList {
         }
 
         newLink.next = current;
+    }
+
+    public void insert(Link link) {
+        Link previous = null;
+        Link current = first;
+
+        while (current != null && link.dData > current.dData) {
+            previous = current;
+            current = current.next;
+        }
+
+        if (previous == null) {
+            first = link;
+        } else {
+            previous.next = link;
+        }
+
+        link.next = current;
     }
 
     public Link remove() {
