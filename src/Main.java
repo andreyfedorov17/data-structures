@@ -5,12 +5,18 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) {
         /*
-        int[] arr = {1, 7, 21, 44, 77};
-        System.out.println(SearchAlgorithms.binarySearch(arr, 21));
-        System.out.println(SearchAlgorithms.recursiveBinarySearch(arr, 21, 0, arr.length - 1));
-        System.out.println(reverse());
-        System.out.println(inToPost());
-        System.out.println(parse());
+        SearchAlgorithms.binarySearch(arr, 21);
+        SearchAlgorithms.recursiveBinarySearch(arr, 21, 0, arr.length - 1);
+        SortAlgorithms.bubbleSort(arr);
+        SortAlgorithms.selectionSort(arr);
+        SortAlgorithms.insertSort(arr);
+        SortAlgorithms.mergeSort(arr);
+        SortAlgorithms.quickSort(arr, 0, arr.length - 1);
+        Recursion.triangle(5);
+        Recursion.factorial(5);
+        reverse();
+        inToPost();
+        parse();
          */
     }
 
